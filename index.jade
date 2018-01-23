@@ -1,0 +1,61 @@
+doctype html
+- var use = { cdn: true, og: true, favicon: true, appleicon: true }
+- var lib = { jquery: true, d3js: false, angular: false, bootstrap: true, semantic: false, fontawesome: true, reactjs: false, revealjs: false, ionrangeslider: false, ldcolorpicker: false }
+- var assets = "assets"
+- var favicon = "logo-alt.png"
+- var title = "Civic Tech Animation Icon Set for g0v"
+- var og = {}
+- og.title = title
+- og.twitter = {type: "summary_large_image", site: "@loadingio", creator: "@loadingio"}
+- og.domain = "loadingio.github.io"
+- og.url = "https://loadingio.github.io/g0v-icons/"
+- og.thumbnail = {width: 900, height: 500, type: "image/png"}
+- og.thumbnail.url = "https://loadingio.github.io/g0v-icons/thumbnail.png"
+- og.author = "loadingio"
+- og.section = "Taiwan"
+- og.keyword = "g0v,icon,animation,gif"
+- og.description = ""
+- var fb = {}
+- fb.app_id = ""
+- fb.admins = ""
+html(lang="en")
+  head(prefix="og: http://ogp.me/ns#")
+    meta(charset="utf-8")
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title= title
+    // libraries
+    include library.jade
+    // custom files
+    link(rel="stylesheet",type="text/css",href="index.css")
+    script(type="text/javascript",src="index.js")
+    - var icons = yaml("icons.yaml")
+  body
+    #heading
+      br
+      br
+      .text-center
+        h2 Civic Tech Animation Icon Set
+        big.grayed.saira 《 for g0v 》
+        br
+        br
+        a(href="https://loading.io/icon/set/hmubcp",target="_blank") Full Collection
+        span &nbsp; / &nbsp;
+        a(href="https://github.com/loadingio/g0v-icons",target="_blank") Github #[i.fa.fa-github]
+        br
+        br
+    br
+    .block800
+      .icons
+        each icon in icons
+          .icon
+            .img(style="background-image:url(/icons/" + icon.filename + ")",data-src="/icons/" + icon.filename)
+            .name #{icon.name}
+            .en #{icon.en}
+    br
+    hr
+    br
+    .text-center.saira
+      span license: CC-BY License / #[a(href="https://loading.io/icon/set/hmubcp/") loading.io]
+      br
+      br
+      br

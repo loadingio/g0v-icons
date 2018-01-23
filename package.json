@@ -1,0 +1,23 @@
+{
+  "author": "loading.io",
+  "name": "g0v-icons",
+  "description": "civic tech animation icon set for g0v",
+  "version": "0.0.1",
+  "homepage": "https://github.com/loadingio/g0v-icons",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loadingio/g0v-icons"
+  },
+  "engines": {
+    "node": ">=0.12.6",
+    "npm": ">=1.2.2"
+  },
+  "dependencies": {
+    "LiveScript": ">=1.2.0",
+    "jade": "=1.11.0",
+    "chokidar": "=1.7.0",
+    "stylus": "=0.50.0",
+    "uglify-js": "=3.2.0",
+    "markdown": "=0.5.0"
+  }
+}

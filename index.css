@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Saira+Extra+Condensed|Varela+Round");
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Varela Round', arial, sans-serif;
+}
+.saira {
+  font-family: 'Saira Extra Condensed', arial, sans-serif;
+}
+.icons {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.icon {
+  width: 100px;
+  height: 140px;
+  margin: 10px;
+  -webkit-flex: 1 1 32px;
+  flex: 1 1 32px;
+  border-radius: 5px;
+  background-color: #eee;
+}
+.icon .img {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  background-position: center center;
+  background-size: 130%;
+}
+.icon .name {
+  margin-top: 3px;
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+}
+.icon .en {
+  text-align: center;
+  font-size: 12px;
+  -ms-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  -webkit-transform: scale(0.75);
+  -o-transform: scale(0.75);
+  transform: scale(0.75);
+  color: #999;
+  margin-top: -5px;
+}
+.block800 {
+  width: 95%;
+  max-width: 800px;
+  margin: auto;
+}
+#heading {
+  background: #000;
+  color: #fff;
+  border-bottom: 1px solid #444;
+}
+#heading a {
+  color: #f00;
+}
